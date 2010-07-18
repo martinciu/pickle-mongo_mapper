@@ -1,17 +1,16 @@
 require 'rubygems'
 require 'rake'
+require 'bundler'
 
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "pickle-mongomapper"
-    gem.summary = %Q{ianwhite's pickle mongomapper adapter}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.name = "pickle-mongo_mapper"
+    gem.summary = %Q{ianwhite's pickle mongo_mapper adapter}
     gem.email = "marcin.ciunelis@gmail.com"
-    gem.homepage = "http://github.com/martinciu/pickle-mongomapper"
+    gem.homepage = "http://github.com/martinciu/pickle-mongo_mapper"
     gem.authors = ["Marcin Ciunelis"]
-    gem.add_development_dependency "rspec", ">= 1.2.9"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_bundler_dependencies
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
@@ -34,12 +33,3 @@ task :spec => :check_dependencies
 
 task :default => :spec
 
-require 'rake/rdoctask'
-Rake::RDocTask.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
-
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "pickle-mongomapper #{version}"
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
-end

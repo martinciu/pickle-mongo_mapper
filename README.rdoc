@@ -1,4 +1,4 @@
-= pickle-mongomapper
+= pickle-mongo_mapper
 
 Description goes here.
 
