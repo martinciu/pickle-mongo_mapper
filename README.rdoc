@@ -4,7 +4,7 @@ ianwhite's pickle mongoid adapter
 
 == Installation
 
-You can let bundler to install pickle-mongoid by adding this line to your application's Gemfile:
+You can let bundler to install pickle-mongo_mapper by adding this line to your application's Gemfile:
 
   gem 'pickle-mongo_mapper'
 
