@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{pickle-mongo_mapper}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Marcin Ciunelis"]
-  s.date = %q{2010-07-16}
+  s.date = %q{2010-07-18}
   s.email = %q{marcin.ciunelis@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -18,10 +18,16 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
      ".gitignore",
+     "Gemfile",
+     "Gemfile.lock",
      "LICENSE",
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "lib/pickle-mongo_mapper.rb",
+     "lib/pickle/adapters/mongo_mapper.rb",
+     "pickle-mongo_mapper.gemspec",
+     "spec/pickle-mongo_mapper_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
   ]
