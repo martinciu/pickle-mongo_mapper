@@ -1,5 +1,6 @@
 source :rubygems
-gem "mongo_mapper", "~>0.7.5"
+gem "i18n"
+gem "mongo_mapper", "~>0.8.4"
 gem "pickle", ">=0.3.0"
 
 group :development do
